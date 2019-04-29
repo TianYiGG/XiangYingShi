@@ -37,6 +37,9 @@ ul,li,p,span{
 .nav ul{
 	display: flex;
 	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-top: 2rem;
 }
 .nav ul li{
 	text-align: center;
@@ -54,43 +57,398 @@ ul,li,p,span{
 	height: 100%;
 	line-height: 4rem;
 }
+/*轮播图下面的部分*/
+.wrapper{
+	padding-bottom: 2rem;
+}
+.wrapper ul li{
+	text-align: center;
+	float: left;
+	width: 11.6rem;
+	margin-bottom: 0.5rem;
+}
+.wrapper ul li img{
+	margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 600px) {
+    .wrapper ul li{
+    	text-align: center;
+    	float: left;
+    	width: 8.6rem;
+		margin-bottom: 0.5rem;
+    }
+}
+/*关于我们部分*/
+.about{
+	background-color: #e6e6e6;
+	padding: 4rem 0 6rem 0;
+}
+.about-us{
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    max-width: 1200px;
+}
+.about-us .left{
+	width: 57%;
+	margin-right: 3rem;
+}
+.about-us .right{
+	width: 40%;
+}
+@media screen and (max-width: 900px) {
+	.about-us{
+		-webkit-box-sizing: border-box;
+	    box-sizing: border-box;
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding-left: 1rem;
+	    padding-right: 1rem;
+	    width: 100%;
+	    max-width: 1200px;
+		display: flex;
+		align-items: center;
+	}
+   .about-us .left{
+   	width: 40%;
+   }
+   .about-us .right{
+   	width: 40%;
+   }
+  .am-tabs-bd .list .one{
+  	font-size: 3rem;
+  }
+  .am-tabs-bd .list .tow{
+  	font-size: 1.5rem;
+  }
+   .am-tabs-bd .list p:nth-child(4){
+   	font-size: 1.2rem;
+   }
+}
+@media screen and (min-width: 900px) {
+	.about-us{
+		-webkit-box-sizing: border-box;
+	    box-sizing: border-box;
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding-left: 1rem;
+	    padding-right: 1rem;
+	    width: 100%;
+	    max-width: 1500px;
+		display: flex;
+		align-items: center;
+	}
+  .am-tabs-bd .list .one{
+  	font-size: 5rem;
+  }
+  .am-tabs-bd .list .tow{
+  	font-size: 3.5rem;
+  }
+   .am-tabs-bd .list p:nth-child(4){
+   	font-size: 1.2rem;
+   }
+}
+@media screen and (max-width: 600px) {
+	.about-us{
+		-webkit-box-sizing: border-box;
+	    box-sizing: border-box;
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding-left: 1rem;
+	    padding-right: 1rem;
+	    width: 100%;
+	    max-width: 1200px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+   .about-us .left{
+   	width: 100%;
+	margin: 0;
+   }
+   .about-us .right{
+   	width: 100%;
+   }
+}
+.am-nav-tabs{
+	width: 100%;
+	border: none;
+}
+.am-tabs-bd{
+	border: none;
+}
+.right .item{
+	background-color: transparent;
+}
+.right .item a{
+	color: #555;
+}
+.item{
+	display: flex;
+	justify-content: center;
+	font-size: 1.3rem;
+}
+.am-nav-tabs>li.am-active>a, .am-nav-tabs>li.am-active>a:focus, .am-nav-tabs>li.am-active>a:hover{
+	color: #fff;
+	background-color: #4b4b4b;
+}
+.am-tabs-bd .list{
+	text-align: center;
+	color: #7f7e7e;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* .am-tabs-bd .list .one{
+	font-size: 6rem;
+}
+.am-tabs-bd .list .tow{
+	font-size: 4rem;
+} */
+.am-tabs-bd .list p:nth-child(4){
+	font-size: 1.2rem;
+}
+.am-tabs-bd .list span{
+	display: block;
+	width: 10rem;
+	height: 4rem;
+	margin: 1.5rem auto;
+	text-align: center;
+	line-height: 4rem;
+	border: 1px solid #7f7e7e;
+}
+.am-tabs-bd .list a{
+	color: #7f7e7e;
+}
+/*案例部分*/
+.wrap{
+	padding: 4rem 0;
+}
+.case{
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	width: 100%;
+	max-width: 1500px;
+}
+.case .left{
+	width: 60%;
+}
+.case .right{
+	width: 40%;
+}
+.case .left>div{
+	width: 45%;
+	margin-right: 5%;
+}
+.case .right>div{
+	width: 100%;
+}
+.case p{
+	text-align: center;
+	padding: 1.5rem 0;
+}
+.case p a{
+	color: #7f7e7e;
+}
+.case p>span{
+	display: inline-block;
+	width: 10rem;
+	height: 4rem;
+	text-align: center;
+	line-height: 4rem;
+	border:1px solid #7f7e7e;
+	margin: 0 2rem;
+}
+.Reference{
+	position: relative;
+}
+.posi{
+	width: 65%;
+	height: 30%;
+	text-align: center;
+	font-size: 1.6rem;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	background: rgba(0,0,0,0.5);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+@media screen and (max-width:700px) {
+	.case .left{
+		width: 100%;
+		float: none;
+		display: flex;
+		justify-content: space-between;
+	}
+	.case .left div{
+		float: none;
+		margin: 0;
+	}
+	.case .right{
+		width: 100%;
+		float: none;
+	}
+}
+/*页脚部分*/
+.footer{
+	background-color: #333333;
+	padding: 6rem 0 0 0;
+}
+.footer>p{
+	height: 5rem;
+	text-align: center;
+	color: #696969;
+}
+.foot{
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	width: 100%;
+	max-width: 1500px;
+	background-color: #0d0d0d;
+	padding: 2rem 6rem;
+}
+.foot .left>div{
+	width:100%;
+	padding-bottom: 1%;
+	background: url(../images/bgc.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.foot .left .title{
+	font-size: 2.5rem;
+	color: #fff;
+	text-align: left;
+	padding-left:1rem;
+}
+.foot .left .info{
+	padding: 1rem;
+	text-align: left;
+	font-size: 1.4rem;
+	line-height:2.8rem;
+	color: #939393;
+}
+.foot .one{
+	color: #e6e6e6;
+	font-size: 3.2rem;
+	font-weight: bold;
+}
+.foot .tow{
+	color: #999;
+	font-size: 3.6rem;
+}
+.foot .content{
+	margin: 0 5rem;
+}
+.foot input{
+	display: block;
+}
+.foot .txt{
+	width: 100%;
+	padding:0.5rem;
+	margin-bottom: 2rem;
+	border: none;
+	outline: none;
+}
+.foot .font{
+	width: 100%;
+	height: 10rem;
+	margin-bottom: 1rem;
+}
+.foot .left{
+	width:25%;
+	flex-grow: 1;
+}
+.foot .content{
+	width: 40%;
+	flex-grow: 2;
+}
+.foot .right{
+	width: 25%;
+	flex-grow: 1;
+}
+.foot .right p{
+	font-size: 1.4rem;
+	color: #999;
+}
+.foot .right .one{
+	color: #e6e6e6;
+	font-size: 3.2rem;
+	font-weight: bold;
+}
+.foot .right .tow{
+	color: #999;
+	font-size: 3.6rem;
+}
+.foot .right .three{
+	font-size: 2.2rem;
+	color: #e6e6e6;
+	font-weight: bold;
+}
+.contact{
+	display: flex;
+	justify-content: flex-start;
+}
+.contact>div{
+	margin-right:1rem;
+	text-align: center;
+	color: #999;
+	font-size: 1.4rem;
+}
+@media screen and (max-width:1100px) {
+	.foot .left{
+		float: none;
+		width: 100%;
+	}
+	.foot .content{
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+	.foot .right{
+		float: none;
+		width: 100%;
+	}
+	.foot{
+		padding: 2rem 4rem;
+	}
+}
+@media screen and (max-width:700px) {
+	.foot .left{
+		float: none;
+		width: 100%;
+	}
+	.foot .content{
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+	.foot .right{
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+	.foot{
+		padding: 1rem 2rem;
+	}
+	.contact{
+		display: flex;
+		justify-content:space-around;
+	}
+}
 
 
 
