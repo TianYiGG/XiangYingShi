@@ -1,1 +1,175 @@
 @charset "utf-8";
+ul,li,p,span{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.header{
+	background-color: #1b1b1b;
+	color: #fff;
+	font-size: 1.2rem;	
+	padding: 2rem 0;
+}
+.header a{
+	color: #fff;
+}
+.head{
+	padding: 0 4rem;
+}
+.logo{
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+}
+.am-header-nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	margin-left: 2rem;
+	font-size: 2rem;
+}
+@media screen and (max-width: 600px) {
+    .logo img{
+        width: 100%;
+    }
+}
+.nav ul{
+	display: flex;
+	justify-content: space-between;
+}
+.nav ul li{
+	text-align: center;
+}
+.nav ul li a p:nth-child(2){
+	color: #666;
+}
+/*侧边栏部分*/
+.am-offcanvas-bar{
+	width: 20rem;
+}
+.am-offcanvas-content{
+	font-size: 1.6rem;
+	text-align: center;
+	height: 100%;
+	line-height: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -36,11 +36,101 @@
 </head>
 <body>
 <div class="header">
+	<div class="head am-cf am-hide-sm">
+		<p class="am-fl">
+			<a href="#">联系我们</a> / 
+			<a href="#">产品中心</a> / 
+			<a href="#">关于我们</a>
+		</p>
+		<p class="am-fr">
+			<img src="images/phone.png" ><span>销售服务热线：400-1368-138</span>
+		</p>
+	</div>
+	<div class="logo am-container">
+		<div><img src="images/LOGO.png"></div>
+		<div class="am-header-right am-header-nav am-show-sm-down">
+		  <a href="#right-link" class="" data-am-offcanvas="{target: '#r-nav'}">
+		    <i class="am-header-icon am-icon-bars"></i> 菜单
+		  </a>
+		</div>
+	</div>
+	<!-- 侧边栏内容 -->
+	<div id="r-nav" class="am-offcanvas">
+	  <div class="am-offcanvas-bar am-offcanvas-bar-flip">
+	    <nav class="am-offcanvas-content">
+	        <a href="/"><span class="logo-slide"></span></a>
+	        <p><i class="am-icon-home"></i> <a href="/">网站首页</a></p>
+	        <p><i class="am-icon-desktop"></i> <a href="/anli.html">案例展示</a></p>
+	        <p><i class="am-icon-cogs"></i> <a href="/fuwu.html">服务内容</a></p>
+	        <p><i class="am-icon-credit-card"></i> <a href="/zixun.html">最新动态</a></p>
 	
+	        <p><i class="am-icon-user"></i> <a href="/about.html">关于我们</a></p>
+	        <p><i class="am-icon-qq"></i> <a href="/contact.html">联系我们</a></p>
+	    </nav>
+	  </div>
+	</div>
+	<div class="nav am-hide-sm-down">
+		<ul class="am-cf">
+			<li>
+				<a href="#">
+					<p>网站首页</p>
+					<p>Hone</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<p>品牌信息</p>
+					<p>Brand information </p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<p>新闻资讯</p>
+					<p>News</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<p>设计项目</p>
+					<p>Design projects </p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<p>案例展示</p>
+					<p>Case shows </p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<p>联系我们</p>
+					<p>Contact us</p>
+				</a>
+			</li>
+		</ul>
+	</div>
 </div>
+<!-- 轮播图 -->
+<div class="am-slider am-slider-default" data-am-flexslider>
+  <ul class="am-slides">
+    <li><img src="images/banner1.jpg" /></li>
+	<li><img src="images/banner2.jpg" /></li>
+	<li><img src="images/banner3.jpg" /></li>
+  </ul>
+</div>
+
+
 
 <!--[if (gte IE 9)|!(IE)]><!-->
 <script src="js/jquery-3.3.1.min.js"></script>
+<script>
+$(function(){
+  $('.am-slider').flexslider({
+    touch: true,
+	 controlNav: false, 
+  });
+});
+</script>
 <!--<![endif]-->
 <!--[if lte IE 8 ]>
 <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
